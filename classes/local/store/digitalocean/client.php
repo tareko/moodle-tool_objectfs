@@ -103,6 +103,7 @@ class client extends s3_client {
             'ams3'      => 'ams3 (Amsterdam)',
             'sgp1'      => 'spg1 (Singapore)',
             'fra1'      => 'fra1 (Frankfurt)',
+            'tor1'      => 'tor1 (Toronto)',
         ];
 
         $settings->add(new \admin_setting_heading(
