@@ -40,6 +40,7 @@ class client extends s3_client {
     public function __construct($config) {
         if ($this->get_availability() && !empty($config)) {
             $this->bucket = $config->do_space;
+            $this->maxupload = OBJECTFS_BYTES_IN_TERABYTE * 5;
             $this->set_client($config);
         } else {
             parent::__construct($config);
